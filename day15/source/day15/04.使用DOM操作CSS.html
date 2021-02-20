@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			
+			#box1{
+				width: 100px;
+				height: 100px;
+				background-color: red;
+			}
+			
+		</style>
+		
+		<script type="text/javascript">
+			
+			window.onload = function(){
+				// 点击按钮后 修改box1大小
+				var box1 = document.getElementById("box1");
+				var btn01 = document.getElementById("btn01");
+				btn01.onclick = function(){
+					// 修改box1的宽度
+					box1.style.width = "200px";
+					box1.style.height = "300px"
+					// 不能带有- 需要将-号去掉 然后后面首字母大写
+					box1.style.backgroundColor = "yellow";
+				}
+
+				var btn02 = document.getElementById("btn02");
+				btn02.onclick = function(){
+					alert(box1.style.width);
+				}
+			}
+			
+		</script>
+	</head>
+	<body>
+		
+		<button id="btn01">点我一下</button>
+		<button id="btn02">点我一下2</button>
+		
+		<br /><br />
+		
+		<div id="box1"></div>
+		
+	</body>
+</html>
