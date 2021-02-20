@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        var a = 123;
+        var b =a.toString();
+        console.log(typeof b)
+
+
+        // string可以转换undefined和null
+        a = String(a);
+        console.log(a)
+
+        // parseInt() 把一个字符串转换为整数
+        //  parseFloat() 把一个字符串转换为浮点数
+        a = "123px"
+        a = parseInt(a)
+        console.log(a)
+
+        a = "070"
+        // 10表示是十进制
+        a=parseInt(a,10)
+
+        // Boolean()
+        // 数字 除了0和NaN 其余都是true
+        //  字符串 除了null 都是true
+        // null 与 undefined都是false
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
